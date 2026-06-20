@@ -51,7 +51,7 @@
       <div class="hero__slide">
         <img src="images/hero-bg-composed.png" alt="Детская мебель" class="hero__bg">
         <div class="hero__overlay"></div>
-        <h1 class="hero__title">Детская мебель, которая вдохновляет мечтать.</h1>
+        <h1 class="hero__title">Детская мебель, которая вдохновляет мечтать</h1>
         <a href="#" class="hero__button button button--primary">В магазин</a>
         <button class="hero__arrow hero__arrow--prev" type="button" aria-label="Предыдущий слайд">
           <img src="images/arrow-prev.svg" alt="" width="53" height="53">
@@ -68,9 +68,8 @@
     </section>
 
     <p class="intro">
-      Мы создаём пространства, где детство раскрывается во всей красе: где шкафы превращаются в замки, столы — в карты далёких стран,
-      а кровати — в облака, уносящие в волшебные сны. «Скай» — не просто мебель. Это старт для детских фантазий, место для открытий
-      и пространство, где каждый день — новое приключение.
+      Moonk — это авторский бренд детской мебели и студия интерьеров, созданные двумя мамами. В нашем магазине вы найдете лаконичную детскую мебель, текстиль, декор,
+      игрушки и товары для творчества - все, что поможет наполнить детскую. Все самое качественное и красивое, для самых важных людей в мире.
     </p>
 
     <section class="shop">
@@ -226,7 +225,7 @@
 
     <section class="design">
       <h2 class="design__title">Дизайн-проект</h2>
-      <p class="design__text">Мы верим, что детские могут быть минималистичными и современными, яркими и оригинальными. Многолетний опыт разработки мебели и<br>проектирования пространств помогает нам создавать функциональные и красивые проекты.</p>
+      <p class="design__text">Мы верим, что детские могут быть минималистичными и современными, яркими и оригинальными. Многолетний опыт разработки мебели и проектирования пространств помогает нам создавать функциональные и красивые проекты.</p>
       <div class="design__banner">
         <div class="design__content">
           <p class="design__banner-text">В зависимости от вашей задачи мы предложим<br>решение, которое подойдёт именно вам.</p>
@@ -445,5 +444,15 @@
   <button type="button" class="chat-fab" aria-label="Чат">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9l-4 3z"/></svg>
   </button>
+  <script>
+    const footerDetails = document.querySelectorAll('.footer-nav__column');
+    const footerQuery = window.matchMedia('(max-width: 1024px)');
+    const syncFooterDetails = () => footerDetails.forEach((item) => {
+      item.open = !footerQuery.matches;
+    });
+
+    syncFooterDetails();
+    footerQuery.addEventListener('change', syncFooterDetails);
+  </script>
 </body>
 </html>
