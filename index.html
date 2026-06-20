@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Скай — детская мебель</title>
+  <link rel="preconnect" href="https://fonts.cdnfonts.com">
+  <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+  <header class="header">
+    <a href="#" class="header__logo">Скай</a>
+    <input type="checkbox" id="nav-toggle" class="header__nav-toggle visually-hidden">
+    <label for="nav-toggle" class="header__burger" aria-label="Меню">
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+    </label>
+    <span class="header__divider" aria-hidden="true"></span>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item nav__item--catalog">
+          <a href="#" class="nav__link">
+            <span class="nav__text">Каталог</span>
+            <img src="images/chevron-catalog.svg" alt="" class="nav__icon" width="13" height="13">
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <span class="nav__text">Дизайн-проект</span>
+            <img src="images/chevron-down.svg" alt="" class="nav__icon" width="13" height="13">
+          </a>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link"><span class="nav__text">О нас</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><span class="nav__text">Оплата и доставка</span></a></li>
+        <li class="nav__item"><a href="#" class="nav__link"><span class="nav__text">Блог</span></a></li>
+      </ul>
+    </nav>
+    <a href="#" class="header__cart cart">
+      <img src="images/cart.svg" alt="Корзина" class="cart__icon" width="24" height="23">
+      <span class="cart__badge">0</span>
+    </a>
+    <a href="tel:+74993919028" class="header__phone">8 499 391 90 28</a>
+    <a href="#" class="header__callback button button--secondary">Обратный звонок</a>
+  </header>
+
+  <main class="page__main">
+    <section class="hero">
+      <div class="hero__slide">
+        <img src="images/hero-bg-composed.png" alt="Детская мебель" class="hero__bg">
+        <div class="hero__overlay"></div>
+        <h1 class="hero__title">Детская мебель, которая вдохновляет мечтать.</h1>
+        <a href="#" class="hero__button button button--primary">В магазин</a>
+        <button class="hero__arrow hero__arrow--prev" type="button" aria-label="Предыдущий слайд">
+          <img src="images/arrow-prev.svg" alt="" width="53" height="53">
+        </button>
+        <button class="hero__arrow hero__arrow--next" type="button" aria-label="Следующий слайд">
+          <img src="images/arrow-next.svg" alt="" width="53" height="53">
+        </button>
+      </div>
+      <div class="hero__dots">
+        <span class="hero__dot hero__dot--active"></span>
+        <span class="hero__dot"></span>
+        <span class="hero__dot"></span>
+      </div>
+    </section>
+
+    <p class="intro">
+      Мы создаём пространства, где детство раскрывается во всей красе: где шкафы превращаются в замки, столы — в карты далёких стран,
+      а кровати — в облака, уносящие в волшебные сны. «Скай» — не просто мебель. Это старт для детских фантазий, место для открытий
+      и пространство, где каждый день — новое приключение.
+    </p>
+
+    <section class="shop">
+      <h2 class="shop__title">Магазин</h2>
+      <ul class="shop__grid">
+        <li class="shop__item shop-card">
+          <div class="shop-card__image"><img src="images/category-tables-69a80c.png" alt="Столы"></div>
+          <h3 class="shop-card__title">Столы</h3>
+        </li>
+        <li class="shop__item shop-card">
+          <div class="shop-card__image"><img src="images/category-chairs-69a80c.png" alt="Стулья"></div>
+          <h3 class="shop-card__title">Стулья</h3>
+        </li>
+        <li class="shop__item shop-card">
+          <div class="shop-card__image"><img src="images/category-beds-69a80c.png" alt="Кровати"></div>
+          <h3 class="shop-card__title">Кровати</h3>
+        </li>
+        <li class="shop__item shop-card">
+          <div class="shop-card__image"><img src="images/category-storage-69a80c.png" alt="Хранение"></div>
+          <h3 class="shop-card__title">Хранение</h3>
+        </li>
+        <li class="shop__item shop-card">
+          <div class="shop-card__image"><img src="images/category-frameless-69a80c.png" alt="Бескаркасная мебель"></div>
+          <h3 class="shop-card__title">Бескаркасная мебель</h3>
+        </li>
+        <li class="shop__item shop-card">
+          <div class="shop-card__image"><img src="images/category-textile-69a80c.png" alt="Текстиль"></div>
+          <h3 class="shop-card__title">Текстиль</h3>
+        </li>
+        <li class="shop__item shop-card">
+          <div class="shop-card__image"><img src="images/category-lighting-69a80c.png" alt="Освещение"></div>
+          <h3 class="shop-card__title">Освещение</h3>
+        </li>
+        <li class="shop__item shop-card">
+          <div class="shop-card__image"><img src="images/category-decor-69a80c.png" alt="Декор"></div>
+          <h3 class="shop-card__title">Декор</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="bestsellers">
+      <h2 class="bestsellers__title">Хиты продаж</h2>
+      <ul class="bestsellers__grid">
+        <li class="bestsellers__item product-card">
+          <img src="images/product-1-1e24d8.png" alt="Стол – Мольберт Malevich" class="product-card__image">
+          <div class="product-card__info">
+            <div class="product-card__details">
+              <h3 class="product-card__name">Стол – Мольберт<br>Malevich</h3>
+              <p class="product-card__price"><span class="product-card__amount">43 900</span> <span class="product-card__currency">р</span></p>
+            </div>
+            <button type="button" class="product-card__button button button--primary">Заказать</button>
+          </div>
+        </li>
+        <li class="bestsellers__item product-card">
+          <img src="images/product-2-49b7f6.png" alt="Стул Malevich" class="product-card__image">
+          <div class="product-card__info">
+            <div class="product-card__details">
+              <h3 class="product-card__name">Стул Malevich</h3>
+              <p class="product-card__price"><span class="product-card__amount">20 800</span> <span class="product-card__currency">р</span></p>
+            </div>
+            <button type="button" class="product-card__button button button--primary">Заказать</button>
+          </div>
+        </li>
+        <li class="bestsellers__item product-card">
+          <img src="images/product-3-637c12.png" alt="Парта Magnus" class="product-card__image">
+          <div class="product-card__info">
+            <div class="product-card__details">
+              <h3 class="product-card__name">Парта Magnus</h3>
+              <p class="product-card__price"><span class="product-card__amount">20 800</span> <span class="product-card__currency">р</span></p>
+            </div>
+            <button type="button" class="product-card__button button button--primary">Заказать</button>
+          </div>
+        </li>
+        <li class="bestsellers__item product-card">
+          <img src="images/product-4-2d686f.png" alt="Стул Magnus" class="product-card__image">
+          <div class="product-card__info">
+            <div class="product-card__details">
+              <h3 class="product-card__name">Стул Magnus</h3>
+              <p class="product-card__price"><span class="product-card__amount">20 800</span> <span class="product-card__currency">р</span></p>
+            </div>
+            <button type="button" class="product-card__button button button--primary">Заказать</button>
+          </div>
+        </li>
+        <li class="bestsellers__item product-card">
+          <img src="images/product-5-2d686f.png" alt="Стол Magnus" class="product-card__image">
+          <div class="product-card__info">
+            <div class="product-card__details">
+              <h3 class="product-card__name">Стол Magnus</h3>
+              <p class="product-card__price"><span class="product-card__amount">20 800</span> <span class="product-card__currency">р</span></p>
+            </div>
+            <button type="button" class="product-card__button button button--primary">Заказать</button>
+          </div>
+        </li>
+        <li class="bestsellers__item product-card">
+          <img src="images/product-6-2d686f.png" alt="Стол BIG" class="product-card__image">
+          <div class="product-card__info">
+            <div class="product-card__details">
+              <h3 class="product-card__name">Стол BIG</h3>
+              <p class="product-card__price"><span class="product-card__amount">20 800</span> <span class="product-card__currency">р</span></p>
+            </div>
+            <button type="button" class="product-card__button button button--primary">Заказать</button>
+          </div>
+        </li>
+        <li class="bestsellers__item product-card">
+          <img src="images/product-7-35750d.png" alt="Шкаф" class="product-card__image">
+          <div class="product-card__info">
+            <div class="product-card__details">
+              <h3 class="product-card__name">Шкаф</h3>
+              <p class="product-card__price"><span class="product-card__amount">20 800</span> <span class="product-card__currency">р</span></p>
+            </div>
+            <button type="button" class="product-card__button button button--primary">Заказать</button>
+          </div>
+        </li>
+        <li class="bestsellers__item product-card">
+          <img src="images/product-8-2d686f.png" alt="Комод" class="product-card__image">
+          <div class="product-card__info">
+            <div class="product-card__details">
+              <h3 class="product-card__name">Комод</h3>
+              <p class="product-card__price"><span class="product-card__amount">20 800</span> <span class="product-card__currency">р</span></p>
+            </div>
+            <button type="button" class="product-card__button button button--primary">Заказать</button>
+          </div>
+        </li>
+        <li class="bestsellers__item product-card">
+          <img src="images/product-9-1ec4d2.png" alt="Кровать History" class="product-card__image">
+          <div class="product-card__info">
+            <div class="product-card__details">
+              <h3 class="product-card__name">Кровать History</h3>
+              <p class="product-card__price"><span class="product-card__amount">20 800</span> <span class="product-card__currency">р</span></p>
+            </div>
+            <button type="button" class="product-card__button button button--primary">Заказать</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="subscribe">
+      <h2 class="subscribe__title">Подпишитесь на рассылку, чтобы быть в курсе самых последних новостей</h2>
+      <div class="subscribe__form-wrap">
+        <form class="subscribe__form" action="#" method="post">
+          <label class="subscribe__field">
+            <span class="visually-hidden">E-mail</span>
+            <input type="email" class="subscribe__input" placeholder="Введите e-mail">
+          </label>
+          <button type="submit" class="subscribe__button button button--secondary">Подписаться</button>
+        </form>
+        <label class="subscribe__consent">
+          <input type="checkbox" class="subscribe__checkbox">
+          <span class="subscribe__consent-text">Я даю согласие на <a href="#" class="subscribe__link">получение рекламной рассылки</a> и <a href="#" class="subscribe__link">обработку своих данных.</a></span>
+        </label>
+      </div>
+    </section>
+
+    <section class="design">
+      <h2 class="design__title">Дизайн-проект</h2>
+      <p class="design__text">Мы верим, что детские могут быть минималистичными и современными, яркими и оригинальными. Многолетний опыт разработки мебели и<br>проектирования пространств помогает нам создавать функциональные и красивые проекты.</p>
+      <div class="design__banner">
+        <div class="design__content">
+          <p class="design__banner-text">В зависимости от вашей задачи мы предложим<br>решение, которое подойдёт именно вам.</p>
+          <a href="#" class="design__button button button--secondary">Узнать</a>
+        </div>
+        <div class="design__image">
+          <img src="images/design.png" alt="Дизайн-проект детской комнаты">
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2 class="faq__title">Вопрос-ответ</h2>
+      <ul class="faq__list">
+        <li class="faq__item">
+          <details class="accordion" name="faq">
+            <summary class="accordion__header">
+              <span class="accordion__question">Как сделать заказ?</span>
+              <span class="accordion__icon" aria-hidden="true">
+                <img src="images/accordion-plus.svg" alt="" class="accordion__icon-img accordion__icon-img--add" width="50" height="50">
+                <img src="images/accordion-minus.svg" alt="" class="accordion__icon-img accordion__icon-img--remove" width="50" height="50">
+              </span>
+            </summary>
+            <div class="accordion__answer">
+              <p class="accordion__text">Вы можете сделать заказ любым удобным способом:</p>
+              <ul class="accordion__bullets accordion__bullets--dot">
+                <li>через сайт <a href="https://moonk-design.com" class="accordion__link" target="_blank" rel="noopener">www.moonk-design.com</a></li>
+                <li>по телефону <a href="tel:+74993919028" class="accordion__link">+74993919028</a></li>
+                <li>через Telegram</li>
+              </ul>
+            </div>
+          </details>
+        </li>
+        <li class="faq__item">
+          <details class="accordion" name="faq">
+            <summary class="accordion__header">
+              <span class="accordion__question">Как собрать мебель?</span>
+              <span class="accordion__icon" aria-hidden="true">
+                <img src="images/accordion-plus.svg" alt="" class="accordion__icon-img accordion__icon-img--add" width="50" height="50">
+                <img src="images/accordion-minus.svg" alt="" class="accordion__icon-img accordion__icon-img--remove" width="50" height="50">
+              </span>
+            </summary>
+            <div class="accordion__answer">
+              <p class="accordion__text">Всю нашу мебель можно собрать самостоятельно с помощью инструкции.<br>Найти инструкцию можно:</p>
+              <ul class="accordion__bullets">
+                <li>На коробе, в который упакован каждый наш предмет — на небольшой наклейке с QR-кодом, наведя на который на вашем телефоне откроется инструкция по сборке этого предмета.</li>
+                <li>В карточке товара на нашем сайте в разделе <a href="https://moonk-design.com/magazin/furniture/" class="accordion__link" target="_blank" rel="noopener">Каталог</a>. При доставке по Москве и ближайшему Подмосковью вы также можете заказать услугу профессиональной сборки всех приобретенных предметов.</li>
+              </ul>
+            </div>
+          </details>
+        </li>
+        <li class="faq__item">
+          <details class="accordion" name="faq">
+            <summary class="accordion__header">
+              <span class="accordion__question">Есть ли у вас сборщик в регионах?</span>
+              <span class="accordion__icon" aria-hidden="true">
+                <img src="images/accordion-plus.svg" alt="" class="accordion__icon-img accordion__icon-img--add" width="50" height="50">
+                <img src="images/accordion-minus.svg" alt="" class="accordion__icon-img accordion__icon-img--remove" width="50" height="50">
+              </span>
+            </summary>
+            <div class="accordion__answer">
+              <p class="accordion__text">К сожалению, сборщик мебели есть только в Москве и ближайшем Подмосковье.</p>
+              <p class="accordion__text">Всю нашу мебель можно собрать самостоятельно с помощью инструкции. Если у вас нет такой возможности, мы рекомендуем воспользоваться сервисами Профи.ру, где можно быстро найти мастера по вашему бюджету. Мастеру необходимо направить инструкцию по сборке предмета, чтобы он взял с собой необходимые инструменты.</p>
+            </div>
+          </details>
+        </li>
+        <li class="faq__item">
+          <details class="accordion" name="faq">
+            <summary class="accordion__header">
+              <span class="accordion__question">Как осуществляется оплата?</span>
+              <span class="accordion__icon" aria-hidden="true">
+                <img src="images/accordion-plus.svg" alt="" class="accordion__icon-img accordion__icon-img--add" width="50" height="50">
+                <img src="images/accordion-minus.svg" alt="" class="accordion__icon-img accordion__icon-img--remove" width="50" height="50">
+              </span>
+            </summary>
+            <div class="accordion__answer">
+              <p class="accordion__text">Мы работаем по 100% предоплате. При заказе на сумму от 150 000 рублей мы можем разделить оплату на 2 части: 50% при оформлении заказа и 50% перед получением заказа.</p>
+              <p class="accordion__text">После оформления заказа мы вышлем вам на почту ссылку на оплату. Ссылка поступит от Сбербанка, оплату можно будет произвести любой банковской картой. После оплаты на указанный вами email придет электронный чек с указанием приобретенных вами товаров, номером заказа, а также нашими реквизитами.</p>
+            </div>
+          </details>
+        </li>
+        <li class="faq__item">
+          <details class="accordion" name="faq">
+            <summary class="accordion__header">
+              <span class="accordion__question">Из каких материалов изготовлена мебель?</span>
+              <span class="accordion__icon" aria-hidden="true">
+                <img src="images/accordion-plus.svg" alt="" class="accordion__icon-img accordion__icon-img--add" width="50" height="50">
+                <img src="images/accordion-minus.svg" alt="" class="accordion__icon-img accordion__icon-img--remove" width="50" height="50">
+              </span>
+            </summary>
+            <div class="accordion__answer">
+              <p class="accordion__text">Все наши предметы произведены из березовой фанеры и покрыты шпоном дуба, либо шпоном американского ореха. Для небольших деталей, не несущих конструктивную нагрузку, мы используем МДФ.</p>
+              <p class="accordion__text">Фанера — это многослойный материал, который представляет собой склеенные между собой листы шпона (тонкие листы древесины толщиной от 0,1 до 10 мм). Листы шпона клеются перпендикулярно, благодаря чему фанера обладает высокой прочностью.</p>
+              <p class="accordion__text">Детали, покрытые шпоном, мы покрываем прозрачным лаком, а цветные детали — эмалями.</p>
+              <p class="accordion__text">Мы используем лакокрасочные материалы итальянского бренда Sayerlack, лидера на рынке европейских лакокрасочных материалов.</p>
+            </div>
+          </details>
+        </li>
+      </ul>
+    </section>
+
+    <section class="social">
+      <h2 class="social__title">Следите за нами в социальных сетях</h2>
+      <ul class="social__list">
+        <li class="social__item"><a href="#" class="social__link"><img src="images/vk.svg" alt="ВКонтакте" width="45" height="49"></a></li>
+        <li class="social__item"><a href="#" class="social__link"><img src="images/tg.svg" alt="Telegram" width="45" height="49"></a></li>
+        <li class="social__item"><a href="#" class="social__link"><img src="images/pin.svg" alt="Pinterest" width="45" height="49"></a></li>
+        <li class="social__item"><a href="#" class="social__link"><img src="images/dzen.svg" alt="Дзен" width="45" height="49"></a></li>
+      </ul>
+    </section>
+
+    <section class="gallery" aria-label="Галерея">
+      <img src="images/gallery-1-18ceb5.png" alt="" class="gallery__image">
+      <img src="images/gallery-2-18ceb5.png" alt="" class="gallery__image">
+      <img src="images/gallery-3-18ceb5.png" alt="" class="gallery__image">
+      <img src="images/gallery-4-18ceb5.png" alt="" class="gallery__image">
+      <img src="images/gallery-5-18ceb5.png" alt="" class="gallery__image">
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#" class="footer__logo">Скай</a>
+        <div class="footer__legal">
+          <p class="footer__company">ИП Бурцева Мария Владимировна</p>
+          <p class="footer__requisites">ИНН: 773614993399<br>ОГРНИП: 316774600332159<br>Юридический адрес: 119334, г. Москва,<br>Косыгина ул, дом 5, квартира 64</p>
+        </div>
+      </div>
+      <nav class="footer__nav footer-nav">
+        <details class="footer-nav__column" open>
+          <summary class="footer-nav__title">Магазин<img src="images/chevron-down.svg" alt="" class="footer-nav__chevron" width="13" height="13"></summary>
+          <ul class="footer-nav__list">
+            <li><a href="#" class="footer-nav__link">Каталог</a></li>
+            <li><a href="#" class="footer-nav__link">Оплата и доставка</a></li>
+            <li><a href="#" class="footer-nav__link">Обмен и возврат</a></li>
+            <li><a href="#" class="footer-nav__link">Вопросы и ответы</a></li>
+            <li><a href="#" class="footer-nav__link">Отзывы</a></li>
+          </ul>
+        </details>
+        <details class="footer-nav__column" open>
+          <summary class="footer-nav__title">О нас<img src="images/chevron-down.svg" alt="" class="footer-nav__chevron" width="13" height="13"></summary>
+          <ul class="footer-nav__list">
+            <li><a href="#" class="footer-nav__link">О бренде</a></li>
+            <li><a href="#" class="footer-nav__link">Клуб Moonk</a></li>
+            <li><a href="#" class="footer-nav__link">Блог</a></li>
+            <li><a href="#" class="footer-nav__link">Контакты</a></li>
+          </ul>
+        </details>
+        <details class="footer-nav__column" open>
+          <summary class="footer-nav__title">Журналы и модели<img src="images/chevron-down.svg" alt="" class="footer-nav__chevron" width="13" height="13"></summary>
+          <ul class="footer-nav__list">
+            <li><a href="#" class="footer-nav__link">3D-модели для дизайнеров</a></li>
+            <li><a href="#" class="footer-nav__link">Журнал каталог мебели</a></li>
+            <li><a href="#" class="footer-nav__link">Каталог дизайн-проектов</a></li>
+            <li><a href="#" class="footer-nav__link">Индивидуальные изделия</a></li>
+          </ul>
+        </details>
+        <div class="footer-nav__aside">
+          <details class="footer-nav__column" open>
+            <summary class="footer-nav__title">Дизайн-проекты<img src="images/chevron-down.svg" alt="" class="footer-nav__chevron" width="13" height="13"></summary>
+            <ul class="footer-nav__list">
+              <li><a href="#" class="footer-nav__link">Дизайн детской комнаты</a></li>
+              <li><a href="#" class="footer-nav__link">Общественные пространства</a></li>
+            </ul>
+          </details>
+          <div class="footer-nav__column footer-nav__column--social">
+            <h3 class="footer-nav__title">Мы в социальных сетях</h3>
+            <img src="images/footer-social.svg" alt="Социальные сети" class="footer-nav__social-icons" width="240" height="45">
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2017-2026 Moonk. Все права защищены</p>
+      <ul class="footer__docs">
+        <li class="footer__doc">
+          <img src="images/doc-icon.svg" alt="" width="17" height="17">
+          <a href="#" class="footer__doc-link">Публичная оферта</a>
+        </li>
+        <li class="footer__doc">
+          <img src="images/doc-icon.svg" alt="" width="17" height="17">
+          <a href="#" class="footer__doc-link">Политика конфиденциальности</a>
+        </li>
+        <li class="footer__doc">
+          <img src="images/doc-icon.svg" alt="" width="17" height="17">
+          <a href="#" class="footer__doc-link">Согласие на обработку персональных данных</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <nav class="tabbar" aria-label="Навигация">
+    <a href="#" class="tabbar__item">
+      <svg class="tabbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></svg>
+      <span class="tabbar__label">Главная</span>
+    </a>
+    <a href="#" class="tabbar__item">
+      <svg class="tabbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <span class="tabbar__label">Поиск</span>
+    </a>
+    <a href="#" class="tabbar__item">
+      <svg class="tabbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/></svg>
+      <span class="tabbar__label">Каталог</span>
+    </a>
+    <a href="#" class="tabbar__item">
+      <svg class="tabbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 11a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>
+      <span class="tabbar__label">Корзина</span>
+    </a>
+    <a href="#" class="tabbar__item">
+      <svg class="tabbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <span class="tabbar__label">Еще</span>
+    </a>
+  </nav>
+
+  <button type="button" class="chat-fab" aria-label="Чат">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9l-4 3z"/></svg>
+  </button>
+</body>
+</html>
